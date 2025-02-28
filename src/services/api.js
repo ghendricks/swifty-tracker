@@ -1,5 +1,6 @@
-export const fetchCollegeStats = async (sport) => {
-    const endpoint = 'https://apinext.collegefootballdata.com/teams?year=2024&conference=B12'; 
+export const fetchCollegeStats = async (year) => {
+    const team = 'BYU';
+    const endpoint = `https://apinext.collegefootballdata.com/plays?year=${year}&team=${team}&week=${1}`; 
     
     const apiKey = 'Au48GGdqhFxWDkneDI15fngXEBJ0W0+Bnu0VfDL4L0OlqQX6nnfXI1MElj83ud8H';
     
